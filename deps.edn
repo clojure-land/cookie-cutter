@@ -1,0 +1,16 @@
+{:paths ["src" "resources"]
+
+ :deps
+ {org.clojure/clojure       {:mvn/version "1.10.1"}
+  backtick                  {:mvn/version "0.3.4"}
+  org.clojure/clojurescript {:mvn/version "1.10.773"}
+  org.clojure/test.check    {:mvn/version "1.0.0"}}
+
+ :aliases
+ {:dev
+  {:extra-paths ["dev"]
+   :extra-deps  {}}
+
+  :test
+  {:extra-paths ["test"]
+   :extra-deps  {lambdaisland/kaocha {:mvn/version "1.0.632"}}}}}
